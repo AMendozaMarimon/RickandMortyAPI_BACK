@@ -4,5 +4,4 @@ const characterRouter = express.Router();
 
 characterRouter.get('/:id', getCharById);
 
-
 module.exports = { characterRouter };
