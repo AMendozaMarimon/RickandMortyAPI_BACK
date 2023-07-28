@@ -1,5 +1,6 @@
 const favoriteRouter = require('express').Router();
-const { postFav, deleteFav } = require('../controllers/handleFavorites');
+const { postFav } = require('../controllers/postFav') 
+const { deleteFav } = require('../controllers/deleteFav') 
 
 favoriteRouter.post('/', postFav);
 favoriteRouter.delete('/:id', deleteFav);
